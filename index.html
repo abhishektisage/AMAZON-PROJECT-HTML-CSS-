@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShopMock — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="logo">
+        <img src="https://via.placeholder.com/90x30?text=ShopMock" alt="ShopMock logo" />
+      </div>
+
+      <form class="searchbar" action="#" method="GET" aria-label="Site search">
+        <select name="category" class="cat-select" aria-label="Category">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="books">Books</option>
+          <option value="fashion">Fashion</option>
+        </select>
+        <input type="search" name="q" placeholder="Search for products, brands and more" aria-label="Search" />
+        <button type="submit" aria-label="Search button">Search</button>
+      </form>
+
+      <nav class="user-nav" aria-label="User menu">
+        <a href="#" class="nav-item">Hello, Sign in</a>
+        <a href="#" class="nav-item">Returns<br/><strong>& Orders</strong></a>
+        <a href="#" class="nav-item cart">
+          <span class="cart-count">3</span>
+          <span class="cart-text">Cart</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="bottombar">
+      <button class="hamburger" aria-label="Open categories">☰</button>
+      <nav class="main-links">
+        <a href="#">All</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Electronics</a>
+        <a href="#">Prime</a>
+        <a href="#">New Releases</a>
+        <a href="#">Customer Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <main class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Categories and filters">
+      <section class="widget categories">
+        <h3>Shop by Category</h3>
+        <ul>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Smart Home</a></li>
+          <li><a href="#">Computers</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Sports</a></li>
+        </ul>
+      </section>
+
+      <section class="widget deals">
+        <h3>Today's Deals</h3>
+        <div class="deal">
+          <img src="https://via.placeholder.com/80" alt="deal" />
+          <div>
+            <strong>Wireless Earbuds</strong>
+            <p class="price">₹1,299</p>
+          </div>
+        </div>
+        <div class="deal">
+          <img src="https://via.placeholder.com/80" alt="deal" />
+          <div>
+            <strong>Smart Bulb</strong>
+            <p class="price">₹499</p>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Product grid -->
+    <section class="products" aria-label="Product results">
+      <div class="products-header">
+        <h2>Results for: <em>wireless headphones</em></h2>
+        <div class="sort">
+          <label for="sort-select">Sort by</label>
+          <select id="sort-select">
+            <option>Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Avg. Customer Review</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Product card (repeat) -->
+        <article class="card" tabindex="0">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/220x180?text=Product+1" alt="Product 1" />
+          </div>
+          <div class="card-body">
+            <h3 class="title">SuperSound Wireless Headphones</h3>
+            <p class="meta">Brand: SoundCo • In stock</p>
+            <div class="price-row">
+              <span class="price">₹2,499</span>
+              <span class="old-price">₹3,499</span>
+            </div>
+            <div class="rating">★★★★☆ <span class="rating-count">(4,512)</span></div>
+            <div class="card-actions">
+              <button class="btn btn-primary">Add to Cart</button>
+              <a class="btn btn-secondary" href="#">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/220x180?text=Product+2" alt="Product 2" />
+          </div>
+          <div class="card-body">
+            <h3 class="title">NoiseAway ANC Headphones</h3>
+            <p class="meta">Brand: QuietLabs • Prime</p>
+            <div class="price-row">
+              <span class="price">₹4,199</span>
+            </div>
+            <div class="rating">★★★★★ <span class="rating-count">(12,302)</span></div>
+            <div class="card-actions">
+              <button class="btn btn-primary">Add to Cart</button>
+              <a class="btn btn-secondary" href="#">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/220x180?text=Product+3" alt="Product 3" />
+          </div>
+          <div class="card-body">
+            <h3 class="title">Budget Beats On-Ear</h3>
+            <p class="meta">Brand: PocketSound</p>
+            <div class="price-row">
+              <span class="price">₹799</span>
+              <span class="old-price">₹999</span>
+            </div>
+            <div class="rating">★★★☆☆ <span class="rating-count">(1,120)</span></div>
+            <div class="card-actions">
+              <button class="btn btn-primary">Add to Cart</button>
+              <a class="btn btn-secondary" href="#">View</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- duplicate more cards to fill grid -->
+        <article class="card" tabindex="0">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/220x180?text=Product+4" alt="Product 4" />
+          </div>
+          <div class="card-body">
+            <h3 class="title">Studio Wireless Pro</h3>
+            <p class="meta">Brand: ProSound • Sold by: ShopMock</p>
+            <div class="price-row">
+              <span class="price">₹7,299</span>
+            </div>
+            <div class="rating">★★★★☆ <span class="rating-count">(3,001)</span></div>
+            <div class="card-actions">
+              <button class="btn btn-primary">Add to Cart</button>
+              <a class="btn btn-secondary" href="#">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/220x180?text=Product+5" alt="Product 5" />
+          </div>
+          <div class="card-body">
+            <h3 class="title">SportX Bluetooth Earbuds</h3>
+            <p class="meta">Brand: SportX • Water resistant</p>
+            <div class="price-row">
+              <span class="price">₹1,699</span>
+            </div>
+            <div class="rating">★★★★☆ <span class="rating-count">(7,450)</span></div>
+            <div class="card-actions">
+              <button class="btn btn-primary">Add to Cart</button>
+              <a class="btn btn-secondary" href="#">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/220x180?text=Product+6" alt="Product 6" />
+          </div>
+          <div class="card-body">
+            <h3 class="title">Classic Over-Ears</h3>
+            <p class="meta">Brand: RetroAudio</p>
+            <div class="price-row">
+              <span class="price">₹2,199</span>
+            </div>
+            <div class="rating">★★★☆☆ <span class="rating-count">(860)</span></div>
+            <div class="card-actions">
+              <button class="btn btn-primary">Add to Cart</button>
+              <a class="btn btn-secondary" href="#">View</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination (static) -->
+      <div class="pagination">
+        <button>&laquo; Prev</button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Next &raquo;</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 ShopMock. This is a mock interface for learning & practice.</p>
+      <nav>
+        <a href="#">About</a> • <a href="#">Careers</a> • <a href="#">Help</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
